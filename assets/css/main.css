@@ -295,7 +295,7 @@ h6 {
   
 }
 
-.scrolled .header img{
+.scrolled .header h1 img{
   width: 60px;
   transition: 1s;
   padding-left: 9px;
@@ -344,7 +344,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: color-mix(in srgb, var(--nav-color), transparent 30%);
-    font-size: 15px;
+    font-size: 17px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
