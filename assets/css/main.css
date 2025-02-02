@@ -474,6 +474,7 @@ h6 {
     background-color: var(--nav-mobile-background-color);
     background-image: url("/assets/img/pozadina-navigacija.png");
     background-repeat: no-repeat;
+    background-position: top right;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -2455,3 +2456,4 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
