@@ -238,7 +238,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 70px;
+  max-height: 75px;
   margin-right: 8px;
 }
 
@@ -291,24 +291,24 @@ h6 {
 .scrolled .header {
   --background-color: rgba(40, 40, 40, 0.9);
   transition: 1s;
-  height: 70px;
+  height: 73px;
   
 }
 
 .scrolled .header h1 img{
-  width: 60px;
+  width: 66px;
   transition: 1s;
   padding-left: 9px;
   
 }
 
 .scrolled .header .mobile-nav-toggle {
-  font-size: 27px;
+  font-size: 28px;
   transition: 1s;
 }
 
 .scrolled .header .cta-btn {
-  font-size: 13px;
+  font-size: 14px;
   transition: 1s;
 }
 /*--------------------------------------------------------------
@@ -471,9 +471,6 @@ h6 {
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    background-image: url("/assets/img/pozadina-navigacija.png");
-    background-repeat: no-repeat;
-    background-position: top right;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -486,7 +483,7 @@ h6 {
     color: #4bc4e1;
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     display: flex;
     align-items: center;
