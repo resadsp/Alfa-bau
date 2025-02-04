@@ -218,3 +218,31 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  const name = document.getElementById('name').value;
+  const signature = "\n\nRespectfully, " + name;
+  const recipient = 'info@alfabau.eu'; // Unesi ovde email primaoca
+
+  const emailDomain = email.split('@')[1];
+  let mailtoLink;
+
+  if (emailDomain.includes('gmail.com')) {
+      mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message+signature)}`;
+  } else if (emailDomain.includes('hotmail.com') || emailDomain.includes('outlook.com')) {
+      mailtoLink = `https://outlook.live.com/owa/?path=/mail/action/compose&to=${recipient}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message+signature)}`;
+  } else if (emailDomain.includes('yahoo.com')) {
+      mailtoLink = `https://compose.mail.yahoo.com/?to=${recipient}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message+signature)}`;
+  } else {
+      mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message+signature)}`;
+  }
+
+  window.open(mailtoLink, '_blank');
+  document.getElementById('sent-message').style.display = 'block';
+});

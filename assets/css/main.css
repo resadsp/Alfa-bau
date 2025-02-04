@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #201c1c;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -176,6 +176,7 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
+  
 }
 
 .php-email-form .sent-message {
@@ -186,6 +187,8 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
+  
+  
 }
 
 .php-email-form .loading {
@@ -585,6 +588,10 @@ h6 {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  background-image: url("/assets/img/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .footer h3 {
@@ -1598,6 +1605,12 @@ section,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+
+
+.contact .php-email-form input[type=text]{
+  text-transform: capitalize;
+}
+
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
