@@ -64,7 +64,9 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  
 }
+
 
 a {
   color: var(--accent-color);
@@ -886,6 +888,7 @@ section,
     line-height: 24px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # About Section
