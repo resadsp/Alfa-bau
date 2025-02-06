@@ -296,12 +296,12 @@ h6 {
 .scrolled .header {
   --background-color: rgba(40, 40, 40, 0.9);
   transition: 1s;
-  height: 77px;
+  height: 74px;
   
 }
 
 .scrolled .header h1 img{
-  width: 73px;
+  width: 86px;
   transition: 1s;
   padding-left: 9px;
   
