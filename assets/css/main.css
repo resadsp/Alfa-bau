@@ -782,7 +782,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 10px 0;
   scroll-margin-top: 72px;
   overflow: clip;
 }
@@ -1676,7 +1676,7 @@ section,
 }
 
 .portfolio-details .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -2476,15 +2476,16 @@ section,
 }
 
 .project-details .portfolio-details-slider img {
-  width: 100%;
+  width: auto;
 }
 
 .project-details .swiper-wrapper {
-  height: auto;
+  height: 400px;
 }
 
 .project-details .swiper-button-prev,
 .project-details .swiper-button-next {
+  padding-top: 10px;
   width: 48px;
   height: 48px;
 }
@@ -2516,9 +2517,9 @@ section,
   }
 
   .project-details .swiper-wrapper img{
-    margin-left: 2%;
-    width: 96%;
-    height: 480px;
+    margin-left: 1%;
+    width: 98%;
+    height: 400px;
   }
 }
 
