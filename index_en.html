@@ -1832,6 +1832,23 @@
       
       <!-- Main JS File -->
       <script src="assets/js/main.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('[data-filter]').forEach(function(filter) {
+            filter.addEventListener('click', function() {
+              const targetClass = this.getAttribute('data-filter'); 
+              const targetDiv = document.querySelector(targetClass);
+              
+              if (targetDiv) {
+                window.scrollTo({
+                  top: targetDiv.offsetTop,
+                  behavior: 'smooth'
+                });
+              }
+            });
+          });
+        });
+    </script>
       
       </body>
       
