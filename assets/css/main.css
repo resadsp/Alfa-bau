@@ -2476,11 +2476,12 @@ section,
 }
 
 .project-details .portfolio-details-slider img {
-  width: auto;
+  width: 100%;
+  height: 810px;
 }
 
 .project-details .swiper-wrapper {
-  height: 400px;
+  height: auto;
 }
 
 .project-details .swiper-button-prev,
@@ -2517,8 +2518,7 @@ section,
   }
 
   .project-details .swiper-wrapper img{
-    margin-left: 1%;
-    width: 98%;
+    width: 100%;
     height: 400px;
   }
 }
