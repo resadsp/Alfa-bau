@@ -246,3 +246,5 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
   window.open(mailtoLink, '_blank');
   document.getElementById('sent-message').style.display = 'block';
 });
+
+
