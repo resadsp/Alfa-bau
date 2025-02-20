@@ -2697,13 +2697,11 @@ section,
 }
 
 .project-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative; /* Changed from absolute */
   background-color: rgba(0, 82, 204, 0.85);
   color: white;
   padding: 15px 20px;
+  margin-top: 0; /* Added to remove any gap */
 }
 
 .project-info .project-title {
